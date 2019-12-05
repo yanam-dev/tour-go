@@ -1,0 +1,32 @@
+$txt: #303030;
+$orange: #f08c1d;
+$blue: #00b7a4;
+$trigger: #595959;
+$line: #e6eaeb;
+
+
+@mixin f300 {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin f500 {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin f700 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin background-matic{
+    background: rgba(245,147,36,1);
+    background: -moz-linear-gradient(left, rgba(245,147,36,1) 0%, rgba(0,189,170,0.92) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(245,147,36,1)), color-stop(100%, rgba(0,189,170,0.92)));
+    background: -webkit-linear-gradient(left, rgba(245,147,36,1) 0%, rgba(0,189,170,0.92) 100%);
+    background: -o-linear-gradient(left, rgba(245,147,36,1) 0%, rgba(0,189,170,0.92) 100%);
+    background: -ms-linear-gradient(left, rgba(245,147,36,1) 0%, rgba(0,189,170,0.92) 100%);
+    background: linear-gradient(to right, rgba(245,147,36,1) 0%, rgba(0,189,170,0.92) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59324', endColorstr='#00bdaa', GradientType=1 );
+}

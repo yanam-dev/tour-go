@@ -22,9 +22,9 @@
                                     <form class="select__form" action="#">
                                         <select>
                                             <option>En</option>
-                                            <option>De</option>
-                                            <option>It</option>
-                                            <option>Sp</option>
+                                            <option>DE</option>
+                                            <option>IT</option>
+                                            <option>SP</option>
                                         </select>
                                     </form>
                                 </div>
@@ -39,84 +39,1320 @@
                             </div>
                         </div>
                         <div class="header__top-enter">
-                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn header__btn-log header__btn-log-on">Login
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn header__btn-log">Login
                                 <span>/</span>
                             </a>
-                            <a href="#" class="header__btn header__btn-logout header__btn-logout-off">Register</a>
-                            <a href="#" class="header__btn header__btn-reg header__btn-log-on">Professionals</a>
+                            <a href="#" class="header__btn header__btn-reg">Register</a>
+                            <a href="#" class="header__btn header__btn-prof">Professionals</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header__menu">
                 <div class="container">
-                    <div class="header__logo">
-                        <a href="index.html">
-                            <picture>
-                                <source srcset="images/logo-sm.png" media="(max-width: 420px)">
-                                <source srcset="images/logo-small.png" media="(max-width: 460px)">
+                    <div class="header__menu-inner d-flex justify-content-between">
+                        <div class="header__logo">
+                            <a class="header__logo-link d-flex" href="index.html">
                                 <img src="images/logo.png" alt="Tour&Go Logo">
-                            </picture>
-                        </a> 
-                    </div>
-                    <nav class="menu d-flex justify-content-between align-items-center">
-                        <div class="menu__btn">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                                <div class="header__logo-name">Tour<span>Go</span></div>
+                            </a> 
                         </div>
-                        <ul class="menu__list">               
-                            <li>
-                                <a href="buy.html">
-                                    Buy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="rent.html">
-                                    Rent
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Commercial
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Find agents
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    New projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Property request
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Viewing trips
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                   Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <nav class="menu d-flex justify-content-between align-items-center">
+                            <div class="menu__btn">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <ul class="menu__list">               
+                                <li>
+                                    <a href="buy.html">
+                                        Buy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="rent.html">
+                                        Rent
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#commercial">
+                                        Commercial
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#agents">
+                                        Find agents
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#projects">
+                                        New projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#property">
+                                        Property request
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#trips.html">
+                                        Viewing trips
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
-
+<!-- start search section  -->
+        <section id="search" class="search" style="background-image: url(images/main-bg.jpg)">
+            <div class="container">
+                <div class="search__inner d-flex justify-content-between">
+                    <div class="search__form">
+                        <div class="search__tabs d-flex">
+                            <div class="search__tab active" data-id="1">To buy</div>
+                            <div class="search__tab" data-id="2">To rent</div>
+                        </div>
+                        <div class="search__form-items">
+                            <div class="search__form-item active-tab" id="1">
+                                <form>
+                                    <div class="search-line">
+                                        <select>
+                                            <option>Country</option>
+                                            <option>Italy</option>
+                                            <option>Iran</option>
+                                            <option>Israel</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-line">
+                                        <select>
+                                            <option>City</option>
+                                            <option>Rome</option>
+                                            <option>Bagdad</option>
+                                            <option>Tel-Aviv</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-line">
+                                        <textarea type="text" placeholder="City, Area"></textarea>
+                                    </div>
+                                    <div class="search-line">
+                                        <select>
+                                            <option>Property type</option>
+                                            <option>Residence</option>
+                                            <option>Triplex</option>
+                                            <option>Duplex</option>
+                                        </select>
+                                    </div>
+                                    <div class="option-range">
+                                        <input type="text" class="js-range-slider" name="my_range" value="">
+                                        <input type="text" class="js-range-slider" name="my_range" value="">
+                                        <input type="text" class="js-range-slider" name="my_range" value="">
+                                    </div>
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="search__form-item" id="2">
+                                <form>
+                                    <div class="search-line">
+                                        <select>
+                                            <option>Country</option>
+                                            <option>Italy</option>
+                                            <option>Iran</option>
+                                            <option>Israel</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-line">
+                                        <select>
+                                            <option>City</option>
+                                            <option>Rome</option>
+                                            <option>Bagdad</option>
+                                            <option>Tel-Aviv</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-line">
+                                        <textarea type="text" placeholder="City, Area"></textarea>
+                                    </div>
+                                    <div class="search-line">
+                                        <select>
+                                            <option>Property type</option>
+                                            <option>Residence</option>
+                                            <option>Triplex</option>
+                                            <option>Duplex</option>
+                                        </select>
+                                    </div>
+                                    <div class="flat-range">
+                                        <span id="rangeValue">Bedroom</span>
+                                        <input type="range" class="js-range-slider" name="bedroom" value="0" min="0" max="12">
+                                    </div>
+                                    <div class="option-range">
+                                        <span id="rangeValue">Bathroom</span>
+                                        <input type="range" class="js-range-slider" name="my_range" value="0" min="0" max="6">
+                                    </div>
+                                    <div class="price-range">
+                                        <span id="rangeValue">Price</span>
+                                        <input type="range" class="js-range-slider" name="my_range" value="0" min="0" max="50">
+                                    </div>
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search__content">
+                        <div class="search__title">
+                            The best way to find <span class="blue-word">your</span> <span class="orange-word">home!</span>
+                        </div>
+                        <div class="search__subtitle">
+                            In efficitur lectus sit amet nibh varius accumsan maecenas in orci lorem malesuada porta proin venenatis ligula non lectus eget tempor diam 
+                            interdum...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- end search section -->
+<!-- start slider-property section -->
+<section id="property" class="property">
+    <div class="container">
+        <h3 class="slider__title">
+            Featured properties
+        </h3>
+        <div class="property__slider">
+            <div class="property__slider-item d-flex justify-content-between">
+                <div class="property__slider-cards d-flex justify-content-between">
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/akasha-house.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Akasha Beach House Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    Briarwood Drive, Cedarville - United States
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>289 m2</span>
+                                    <span>4 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>8 Bedrooms</span>
+                                    <span>4 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate: <span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Elegant Coastal Home
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    456 Lake Avenue, Oceand City - MD
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>360 m2</span>
+                                    <span>1 Garage</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>5 Bedrooms</span>
+                                    <span>2 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Amanda td</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/jabiru-3.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                   Jabiru Beachfront Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    765 Ocean Avenue, Brooklyn NY
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>970 m2</span>
+                                    <span>1 Garage</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>6 Bedrooms</span>
+                                    <span>3 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/splash-4.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Splash Beachside Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    2415 Byron Shire, New South - Wales
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>529 m2</span>
+                                    <span>1 Garage</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>7 Bedrooms</span>
+                                    <span>2 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Amanda td</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/house-beachfront-5.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                   House Beachfront Echoes
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    1975 Byron Shire, New South - Wales
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>450 m2</span>
+                                    <span>4 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>8 Bedrooms</span>
+                                    <span>4 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Amanda td</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/luxury-villa-6.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Luxury Villa - Stunning Holiday
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    1656 Byron Shire, New South - Wales
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>1200 m2</span>
+                                    <span>4 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>12 Bedrooms</span>
+                                    <span>6 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="property__slider-item d-flex justify-content-between">
+                <div class="property__slider-cards d-flex justify-content-between">
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Akasha Beach House Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    Briarwood Drive, Cedarville - United States
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>289 m2</span>
+                                    <span>4 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>8 Bedrooms</span>
+                                    <span>4 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Beachfront House Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    1656 Byron Shire, New South - Wales
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>540 m2</span>
+                                    <span>1 Garage</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>7 Bedrooms</span>
+                                    <span>2 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Amanda td</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/jabiru-3.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Stunning Holiday House Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    1656 Byron Shire, New South - Wales
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>450 m2</span>
+                                    <span>1 Garage</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>5 Bedrooms</span>
+                                    <span>2 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/splash-4.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Jabiru House Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    Briarwood Drive, Cedarville - United States
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>450 m2</span>
+                                    <span>1 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>6 Bedrooms</span>
+                                    <span>2 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/house-beachfront-5.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Beachfront House Byron
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    Briarwood Drive, Cedarville - United States
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>339 m2</span>
+                                    <span>2 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>6 Bedrooms</span>
+                                    <span>3 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property__slider-card active">
+                        <a class="property__card-image" style="background-image: url(images/content/luxury-villa-6.png)">
+                            <div class="property__card-overlay"></div>
+                        </a>
+                        <div class="property__card-content">
+                            <div class="property__card-price card-price d-flex justify-content-between">
+                                <span class="card-rent">Rent</span>
+                                <span class="card-price">$2650 / month</span>
+                            </div>
+                            <div class="property__card-name">
+                                <a href="#" class="property__card-title">
+                                    Luxury Villa Malibu
+                                </a>
+                                <a href="#" class="property__card-address">
+                                    Briarwood Drive, Malibu - United States
+                                </a>
+                            </div>
+                            <div class="property__card-descript d-flex">
+                                <div class="property__descript-col descript__col-one">
+                                    <span>1289 m2</span>
+                                    <span>5 Garages</span>
+                                </div>
+                                <div class="property__descript-col descript__col-two">
+                                    <span>14 Bedrooms</span>
+                                    <span>6 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="property__card-company d-flex align-items-center justify-content-between">
+                                <div>Real estate:<span>Prospera</span></div>
+                                <ul class="card-company__icons d-flex">
+                                    <li class="card-company__icon">
+                                        <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                    </li>
+                                    <li class="card-company__icon">
+                                        <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end slider-property section -->
+<!-- start slider-project section -->
+    <section id="slider-project" class="slider-project">
+        <div class="container">
+            <h3 class="slider__title">
+                Featured projects
+            </h3>
+            <div class="project__slider">
+                <div class="project__slider-item d-flex justify-content-between">
+                    <div class="project__slider-cards d-flex justify-content-between">
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/project-1.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$600- 1600</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project One House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        1656 Byron Shire, New South - Wales
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>300 - 900 m2</span>
+                                        <span>10 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: October 17, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate: <span>Prospera</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/project-2.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$1600- 2850</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Two House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        456 Lake Avenue, Oceand City - MD
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>360 - 930m2</span>
+                                        <span>6 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: October 17, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Prospera</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/project-3.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$1320- 2650</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                       Project Three House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        765 Ocean Avenue, Brooklyn NY
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>970 - 1540m2</span>
+                                        <span>10 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: October 17, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Prospera</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/project-4.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$1100- 2150</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Four House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        2415 Byron Shire, New South - Wales
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>529 - 1450m2</span>
+                                        <span>12 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: January 05, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Amanda td</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/project-5.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$690- 1650</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="property__card-title">
+                                      Project Five House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        Date delivery: March 17, 2018
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>450 - 900 m2</span>
+                                        <span>4 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: January 05, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Amanda td</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/project-6.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$650- 2150</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Six House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        1346 Shire, New South - Wales
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>600 - 900m2</span>
+                                        <span>12 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: March 17, 2019</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Amanda td</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__slider-item d-flex justify-content-between">
+                    <div class="project__slider-cards d-flex justify-content-between">
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/elegant-home-2.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$790- 2150</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Seven House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        1656 Byron Shire, New South - Wales
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>300 - 900 m2</span>
+                                        <span>10 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: Octomber 17, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Amanda td</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/elegant-home-2.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$1300- 2150</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Eight House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        1975 Byron Shire, New South - Wales
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>400 - 800m2</span>
+                                        <span>14 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: December 01, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Amanda td</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/jabiru-3.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$1000- 1950</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Nine House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        456 Lake Avenue, Ocean City MD
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>600 - 1900m2</span>
+                                        <span>13 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: September 17, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Prospera</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/splash-4.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$500- 1250</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Ten House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        Briarwood Drive, Cedarville - United States
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>450 - 1000m2</span>
+                                        <span>6 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: January 05, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Amanda td</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/house-beachfront-5.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$777- 1650</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Eleven House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        765 Ocean Avenue, Brooklyn NY
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>60 - 80m2</span>
+                                        <span>5 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: March 17, 2018</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Prospera</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__slider-card focused">
+                            <a class="project__card-image" style="background-image: url(images/content/luxury-villa-6.png)">
+                                <div class="project__card-overlay"></div>
+                            </a>
+                            <div class="project__card-content">
+                                <div class="project__card-price card-price d-flex justify-content-between">
+                                    <span class="card-rent">Project</span>
+                                    <span class="card-price">$999- 7759</span>
+                                </div>
+                                <div class="project__card-name">
+                                    <a href="#" class="project__card-title">
+                                        Project Twelve House / Villa
+                                    </a>
+                                    <a href="#" class="project__card-address">
+                                        2415 Byron Shire, New South - Wales
+                                    </a>
+                                </div>
+                                <div class="project__card-descript">
+                                    <div class="project__descript-col descript-col-one d-flex">
+                                        <span>1300 - 2900m2</span>
+                                        <span>30 Units</span>
+                                    </div>
+                                    <div class="project__descript-col descript-col-two">
+                                        <span>Date delivery: Octomber 17, 2019</span>
+                                    </div>
+                                </div>
+                                <div class="project__card-company d-flex align-items-center justify-content-between">
+                                    <div>Real estate:<span>Prospera</span></div>
+                                    <ul class="card-company__icons d-flex">
+                                        <li class="card-company__icon">
+                                            <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                        </li>
+                                        <li class="card-company__icon">
+                                            <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end slider-project section -->
+<!-- start partner section -->
+<section id="partners" class="partners">
+    <div class="partners__top">
+        <div class="container">
+            <h3 class="slider__title">
+                Our partners
+            </h3>
+            <p class="partners__txt">
+                In efficitur lectus sit amet nibh varius accumsan maecenas in orci lorem malesuada porta 
+    proin venenatis ligula non lectus eget tempor diam interdum...
+            </p>
+        </div>
+    </div>
+    <div class="partners__bottom">
+        <div class="container">
+            <div class="partners__slider">
+                <div class="partners__slider-item">
+                    <a class="partners__image" style="background-image: url(images/content/partners-logo.png)"></a>
+                </div>
+                <div class="partners__slider-item">
+                    <a class="partners__image" style="background-image: url(images/content/partners-logo.png)"></a>
+                </div>
+            </div>    
+         </div>
+    </div>
+</section>
+<!-- end partner section -->
 <!-- end div "content" -->
 </div>
 <!-- start footer -->
 <footer id="footer" class="footer">
-
+    <div class="container">
+        <div class="footer__content d-flex justify-content-between">
+            <div class="footer__socials">
+                <a class="icon-facebook" href="https://www.facebook.com"></a> 
+                <a class="icon-twitter" href="https://www.twitter.com"></a> 
+                <a class="icon-linkedin" href="https://www.linkedin.com"></a> 
+            </div>
+            <nav class="footer__menu d-flex justify-content-between align-items-center">
+                <ul class="footer__menu-list">               
+                    <li>
+                        <a href="terms.html">
+                            Terms & conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">
+                            Privacy policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contancts.html">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__credits">
+                &#169; 2017 turegu. All rights reserved
+            </div>
+        </div>
+    </div>
+    <div data-scroll-to-top class="scroll-to-top">
+        <a>
+            <button class="btn-scroll">
+                <span aria-hidden="true" class="icon air-icon-arrow-collapse"></span>
+            </button>
+        </a>
+    </div>
 </footer>   
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
