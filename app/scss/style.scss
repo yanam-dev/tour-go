@@ -494,6 +494,7 @@
     background-color: #fff;
     border-bottom: 3px solid #ddd;
     padding: 38px 0 36px;
+    position: relative;
     &__socials{
         font-family: 'icomoon';
         a {
@@ -502,7 +503,7 @@
             font-size: 18px;
             width: 26px;
             height: 27px;
-            margin-right: 15px;
+            // margin-right: 15px;
             position: relative;
             &:before {
                 position: absolute;
@@ -514,6 +515,40 @@
                 background-color: $txt;
                 transition: all 1s ease-in-out;
             }
+        }
+    }
+    .scroll-to-top{
+        position: absolute;
+        right: 82px;
+        bottom: 64%;
+        .btn-scroll{
+            width: 75px;
+            height: 75px;
+            background-color: $blue;
+            .scroll-icon{
+                position: relative;
+                top: 0;
+                display: inline-block;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-image: url(../images/icons/chevron-up.svg);
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+    &__menu{
+        ul > li > a{
+           color: #000; 
+           border-left: 2px solid $line;
+           padding: 0 13px;
+           font-size: 18px;
+           @include f500;
         }
     }
 }

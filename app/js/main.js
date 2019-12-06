@@ -36,17 +36,5 @@ $('.property__slider, .project__slider, .partners__slider').slick({
     nextArrow: '<button type="button" class="slick-next slick-arrow slider-btn" alt="Link to..."></button>',
 
 });
-
-
-// $('.property__slider-icon').on('click', function () {
-//     $('.property__slider-card').addClass('active');
-//     $(".icon-th-list").addClass('active');
-//     $(".property__slider-card").removeClass('active');
-// });
-// $('.icon-th-large').on('click', function () {
-//     $('.products__item').removeClass('list');
-//     $('.icon-th-large').addClass('active');
-//     $('.icon-th-list').removeClass('active');
-// });
     
 });
