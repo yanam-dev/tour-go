@@ -1,0 +1,215 @@
+@media (max-width: 1800px){
+    .scroll-to-top{
+        right: 40px!important;
+        bottom: 140px!important;
+    }
+}   
+@media (max-width: 1400px){
+    .menu__btn{
+        display: block;
+        cursor: pointer;
+        div{
+            height: 3px;
+            background-color: #8c8c8c;
+            width: 35px;
+            border-radius: 8px;
+            margin-bottom: 7px;
+            transition: all 0.3s ease;
+        }
+    }
+    .menu__list{
+        position: absolute;
+        top: 161px;
+        display: flex;
+        flex-direction: row;
+        left: 0;
+        // height: 88vh;
+        width: 100%;
+        align-items: center;
+        background: linear-gradient(#FFF,#E6E6E6);
+        opacity: 0.98;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+        li{
+            opacity: 0;
+            a{
+                &:after{
+                    width: 0;
+                }
+            }
+        }
+    }
+    .menu-active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,8.5px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-8.5px);
+    }
+}
+@media (max-width: 1320px) {
+    .menu__list{
+        left: 70%;
+        flex-direction: column;
+        width: 30%;
+        height: 80vh;
+    // overflow: scroll;
+        li a{
+            margin-bottom: 19px;
+            padding: 15px;
+            
+        }
+    }
+    // .ov-scroll{
+    //     overflow-y: auto;
+	//     -webkit-overflow-scrolling:touch;
+    // }
+}
+@media (max-width: 1200px){
+    .menu__list{
+        left: 65%;
+        width: 35%;
+    }
+    .scroll-to-top{
+        right: 15px!important;
+        bottom: 135px!important;
+        .btnScroll{
+            width: 55px!important;
+            height: 55px!important;
+            .scroll-icon{
+                &:before{
+                    content: "";
+                    width: 16px!important;
+                    height: 16px!important;
+                }
+            }
+            
+        }
+    }
+    .footer__content{
+        flex-wrap: wrap;
+    }
+    .footer__socials{
+        order: 1;
+    }
+    .footer__menu{
+        min-width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .footer__credits{
+        order: 1;
+    }
+}
+@media (max-width: 890px){
+    .menu__list {
+        left: 55%;
+        width: 45%;
+    }
+}
+@media (max-width: 690px){
+    .menu__list {
+        left: 50%;
+        width: 50%;
+    
+    }
+    .footer__menu{
+        ul li a {
+            margin-bottom: 8px;
+        }
+    }
+    .scroll-to-top{
+        right: 40px!important;
+        bottom: 175px!important;
+    }
+}
+@media (max-width: 600px){
+    .menu__list{
+        width: 55%;
+        left: 45%;
+        a{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 550px){
+    .footer__credits{
+        font-size: 16px;
+    }
+    .scroll-to-top{
+        right: 15px!important;
+        bottom: 72px!important;
+    }
+    .scroll-to-top .btnScroll {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .scroll-to-top .btnScroll .scroll-icon:before {
+        width: 13px !important;
+        height: 13px !important;
+    }
+}
+@media (max-width: 490px){
+    .header__logo-name {
+        font-size: 26px;
+        padding: 20px 0;
+    }
+    .header__logo-link{
+        padding-top: 8px;
+        img{
+            width: 46px;
+            height: 58px;
+        }
+    }
+    .menu__list {
+            left: 35%;
+            width: 65%;
+            top: 153px;
+            height: 81vh;
+        
+        a{
+            margin-left: 15px;
+            font-size: 19px;
+        }
+    }
+    .header__menu {
+        padding: 12px 0 10px;
+    }
+    .header__btn {
+        font-size: 16px;
+    }
+    .header__btn-prof {
+        display: none;
+    }
+}
+@media (max-width: 421px){
+    .footer__credits{
+        padding-left: 20px;
+        padding-top: 30px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+    .menu__list {
+        left: 0;
+        width: 100%;
+        a{
+            font-size: 18px;
+        }
+    }
+}

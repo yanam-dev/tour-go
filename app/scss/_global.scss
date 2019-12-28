@@ -6,7 +6,7 @@ body{
     height: 100%;
     position: relative;
     overflow-x: hidden; 
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -32,6 +32,9 @@ body{
     padding: 0 15px;
     width: 100%;
 }
+main{
+    background-color: #f8f8f8;
+}
 nav{
     display: block;
     font-family: 'Montserrat', sans-serif;
@@ -50,8 +53,14 @@ a {
     line-height: 24px;
     font-size: 14px;
 }
+a, label{
+    -webkit-tap-highlight-color: transparent;
+}
 img {
     display: block;
+}
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
 }
 .d-flex {
     display: -webkit-flex;
@@ -96,6 +105,23 @@ h3{
     font-family: 'Montserrat', sans-serif;
     @include f700;
     margin: 0;
+}
+h5{
+    font-size: 20px;
+    @include f700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto; 
 }
 .jq-selectbox{
     &__select {

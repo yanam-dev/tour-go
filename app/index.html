@@ -58,12 +58,7 @@
                             </a> 
                         </div>
                         <nav class="menu d-flex justify-content-between align-items-center">
-                            <div class="menu__btn">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <ul class="menu__list">               
+                            <ul class="menu__list ov-scroll">               
                                 <li>
                                     <a href="buy.html">
                                         Buy
@@ -105,13 +100,19 @@
                                     </a>
                                 </li>
                             </ul>
+                            <div class="menu__btn">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
                         </nav>
                     </div>
                 </div>
             </div>
         </header>
 <!-- start search section  -->
-        <section id="search" class="search" style="background-image: url(images/main-bg.jpg)">
+        <section id="search" class="search" style="background-image: url(images/main-bg1.jpg)">
+            <div class="search__overlay"></div>
             <div class="container">
                 <div class="search__inner d-flex justify-content-between">
                     <div class="search__form">
@@ -225,7 +226,7 @@
         <div class="property__slider">
             <div class="property__slider-item d-flex justify-content-between">
                 <div class="property__slider-cards d-flex justify-content-between">
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/akasha-house.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -268,7 +269,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -311,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/jabiru-3.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -354,7 +355,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/splash-4.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -397,7 +398,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/house-beachfront-5.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -440,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/luxury-villa-6.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -487,7 +488,7 @@
             </div>
             <div class="property__slider-item d-flex justify-content-between">
                 <div class="property__slider-cards d-flex justify-content-between">
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -530,7 +531,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -573,7 +574,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/jabiru-3.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -616,7 +617,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/splash-4.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -659,7 +660,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/house-beachfront-5.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -702,7 +703,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="property__slider-card active">
+                    <div class="property__slider-card focused">
                         <a class="property__card-image" style="background-image: url(images/content/luxury-villa-6.png)">
                             <div class="property__card-overlay"></div>
                         </a>
@@ -1348,8 +1349,8 @@
     </div>
 <!-- start scroll to top -->
     <div data-scroll-to-top class="scroll-to-top">
-        <a href="">
-            <button class="btn-scroll">
+        <a href="#">
+            <button class="btnScroll" id="btnScroll">
                 <span aria-hidden="true" class="scroll-icon icon-angle-up"></span>
             </button>
         </a>
