@@ -62,12 +62,12 @@ $('.property__slider, .project__slider, .partners__slider').slick({
 
 // Content Sorting buttons
 $('.icon-th-list').on('click', function () {
-    // $('.products__item').addClass('list');
+    $('.property-page__sort .property__slider-card').addClass('list');
     $(".icon-th-list").addClass('active');
     $(".icon-th-large, .icon-th-draw, .icon-th-map").removeClass('active');
 });
 $('.icon-th-large').on('click', function () {
-    // $('.products__item').removeClass('list');
+    $('.property-page__sort .property__slider-card').removeClass('list');
     $('.icon-th-large').addClass('active');
     $('.icon-th-list, .icon-th-draw, .icon-th-map').removeClass('active');
 });

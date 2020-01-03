@@ -32,6 +32,9 @@
 	-moz-osx-font-smoothing: grayscale;
   }
 
+	.icon-envelope-o:before {
+		content: "\f003";
+	}
   .icon-heart-o:before {
 	content: "\f08a";
   }
