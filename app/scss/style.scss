@@ -310,10 +310,12 @@
         font-size: 24px;
         @include f500;
         color: $txt;
+        margin-bottom: 5px;
     }
     &-address{
         color: #a5a5a5;
         padding-bottom: 22px;
+        font-size: 18px;
         position: relative;
         &:after{
             content: '';
@@ -927,14 +929,12 @@
     display: none;
 }
 .property__card-company{
-.card-company__icon{
-    .msg{
-        &:before{
-        opacity: 0;
+    .card-company__icons{
+        .icon-msg{
+            display: none;
         }
-        
     }
-}}
+}
 .property-page__content{
     .property__slider-card{
         &.list{
@@ -1122,7 +1122,7 @@
                 }
             }
             .property__card-content{
-                padding: 40px 22px 0 27px;
+                padding: 40px 22px 0 28px;
             }
             .property__card-title{
                 font-size: 23px;
@@ -1136,6 +1136,7 @@
                 font-size: 16px;
                 &:after{
                     bottom: -6px;
+                    width: 420px;
                 }
             }
             .property__card-descript{
@@ -1153,11 +1154,11 @@
                 &:after{
                     content: '';
                     height: 2px;
-                    width: 405px;
                     background: #e6eaeb;
                     position: absolute;
                     bottom: -8px;
                     left: 0;
+                    width: 420px;
                 }
                 .txt__link{
                     color: $orange;
@@ -1169,9 +1170,11 @@
                     padding: 12px 0px;
                 }
             }
-            .card-company__icon{
-                padding: 12px 16px 8px 15px;
-                .msg{
+            .card-company__icons{
+                .card-company__icon{
+                    padding: 12px 16px 13px 14px;
+                }
+                .icon-msg{
                     display: block;
                     &:before{
                         content: "\f003";
