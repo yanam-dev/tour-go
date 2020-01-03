@@ -54,13 +54,13 @@
         }
     }
     .toggle .line1{
-        transform: rotate(-45deg) translate(-5px,8.5px);
+        transform: rotate(-45deg) translate(-6px, 10px);
     }
     .toggle .line2{
         opacity: 0;
     }
     .toggle .line3{
-        transform: rotate(45deg) translate(-5px,-8.5px);
+        transform: rotate(45deg) translate(-4px,-8px);
     }
 }
 @media (max-width: 1320px) {
@@ -168,7 +168,7 @@
 @media (max-width: 490px){
     .header__logo-name {
         font-size: 26px;
-        padding: 20px 0;
+        padding: 17px 0;
     }
     .header__logo-link{
         padding-top: 8px;
@@ -177,10 +177,13 @@
             height: 58px;
         }
     }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 9px);
+    }
     .menu__list {
             left: 35%;
             width: 65%;
-            top: 153px;
+            top: 144px;
             height: 81vh;
         
         a{
@@ -188,8 +191,12 @@
             font-size: 19px;
         }
     }
+    .menu__btn div{
+        width: 30px;
+        margin-bottom: 6px;
+    }
     .header__menu {
-        padding: 12px 0 10px;
+        padding: 9px 0 10px;
     }
     .header__btn {
         font-size: 16px;
