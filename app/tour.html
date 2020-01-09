@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tour&Go Tourism</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <aside class="content">
+        <header id="header" class="header header-cropped" style="background-image: url(images/main-bg-cropped.jpg)">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner d-flex justify-content-between align-items-center">
+                        <div class="header__top-select">
+                            <div class="select__row d-flex">
+                                <div class="select__language">
+                                    <form class="select__form" action="#">
+                                        <select>
+                                            <option>En</option>
+                                            <option>DE</option>
+                                            <option>IT</option>
+                                            <option>SP</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="select__money">
+                                    <form class="select__form" action="#">
+                                        <select>
+                                            <option>Dollar</option>
+                                            <option>Euro</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__top-enter">
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn header__btn-log">Login
+                                <span>/</span>
+                            </a>
+                            <a href="#" class="header__btn header__btn-reg">Register</a>
+                            <a href="#" class="header__btn header__btn-prof">Professionals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="container">
+                    <div class="header__menu-inner d-flex justify-content-between">
+                        <div class="header__logo">
+                            <a class="header__logo-link d-flex" href="index.html">
+                                <img src="images/logo.png" alt="Tour&Go Logo">
+                                <div class="header__logo-name">Tour<span>Go</span></div>
+                            </a> 
+                        </div>
+                        <nav class="menu d-flex justify-content-between align-items-center">
+                            <ul class="menu__list">               
+                                <li>
+                                    <a href="buy.html">
+                                        Buy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="rent.html">
+                                        Rent
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#commercial">
+                                        Commercial
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="agents.html">
+                                        Find agents
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#projects">
+                                        New projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="property.html">
+                                        Property request
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trips.html">
+                                        Viewing trips
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="menu__btn">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header__content tour__content">
+                <div class="container">
+                    <h5 class="header__content-title">
+                        Tour Details
+                    </h5>
+                    <div class="header__content-filter tour__content-filter d-flex justify-content-between align-items-center">
+                        <div class="sort__items tour__sort-items d-flex align-items-center justify-content-between">
+                            <!-- <div class="sort__items-border">
+                                <span class="results-amount">18 results</span>
+                                <form class="select__form" action="#">
+                                    <select name="sortOrder">
+                                        <option value>Sort By:</option>
+                                        <option value="New-in">Newest Listed</option>
+                                        <option value="price-desc">Price High to Low</option>
+                                        <option value="price-asc">Price Low to High</option>
+                                    </select>
+                                </form>
+                            </div> -->
+                            <div class="sort-list tour__sort-list">
+                                <ul class="tabList d-flex align-items-center">
+                                    <li><a class="icon-th-large active">Project details</a></li>
+                                    <li><a class="icon-th-list">Tour details</a></li>
+                                    <li><a class="icon-th-map">Agent and Company details</a></li>
+                                    <li><a class="icon-th-draw">Book this tour</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <main>
+    <section class="tour" id="tour">
+        <div class="container">
+            <div class="tour__sort d-flex justify-content-between">
+                <div class="tour__sort-content" id="tour__sort-content">
+                    <div class="tour__details">
+                        <div class="tour__details-day1">
+                            <h5 class="tour__details-title">
+                                Day 1: Departure
+                            </h5>
+                            <p class="tour__details-txt">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
+                            </p>  
+                            <ul>
+                                <li>
+                                    <span>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</span>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tour__details-day2">
+                            <h5 class="tour__details-title">
+                                Day 2: Adventure Begins
+                            </h5>
+                            <p class="tour__details-txt">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
+                            </p>  
+                            <ul>
+                                <li>
+                                    <span>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</span>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                                <li>
+                                    <span>Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tour__details-day3">
+                            <h5 class="tour__details-title">
+                                Day 3: Historical Tour
+                            </h5>
+                            <p class="tour__details-txt">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
+                            </p> 
+                        </div>
+                        <div class="tour__details-day4">
+                            <h5 class="tour__details-title">
+                                Day 4: City Tour
+                            </h5>
+                            <p class="tour__details-txt">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
+                            </p>  
+                            <ul>
+                                <li>
+                                    <span>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</p>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tour__details-day5">
+                            <h5 class="tour__details-title">
+                                Day 5: City Tour
+                            </h5>
+                            <p class="tour__details-txt">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
+                            </p>  
+                            <ul>
+                                <li>
+                                    <span>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</p>
+                                </li>
+                                <li>
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                                <li>
+                                    <span>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</span>
+                                </li>
+                                <li>  
+                                    <span>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</span>
+                                </li>
+                                <li>  
+                                    <span>Nunc tincidunt mollis felis, sed bibendum ligula auctor et. Etiam a erat sit amet augue tincid euismod.</span>
+                                </li>
+                                <li>  
+                                    <span>Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor.</span>
+                                </li>
+                            </ul>
+                            <p class="tour__details-txt">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                <aside class="property-page__aside" id="property-page__aside">
+                    <form class="property-page__form">
+                        <div class="cats__select">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <button class="cats__btn-reset" type="reset">Check Availability</button>
+                            <button class="cats__btn-search" type="submit">Book Now</button>
+                        </div>
+                    </form>
+                    <div class="property-page__estate tour__proposal">
+                        <div class="property-page__title">
+                            Find your tour
+                        </div>
+                        <p class="property-page__txt">
+                            Find your tour with house on the exact key parameters.
+                        </p>
+                            <div class="property__slider-card">
+                                <div>
+                                    <a class="property__card-image" style="background-image: url(images/content/venice-tour.png)">
+                                        <div class="property__card-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="property__card-content">
+                                    <div class="property__card-price card-price d-flex justify-content-between">
+                                        <span class="card-price">$1259 / 5 days</span>
+                                    </div>
+                                    <div class="property__card-name">
+                                        <a href="#" class="property__card-title">
+                                            Romantic Italy
+                                        </a>
+                                        <a href="#" class="property__card-address">
+                                            Venice - Italy (IT)
+                                        </a>
+                                    </div>
+                                    <div class="property__card-descript">
+                                        Lorem ipsum dolor sit amet
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property__slider-card">
+                                <div>
+                                    <a class="property__card-image" style="background-image: url(images/content/prague-tour.png)">
+                                        <div class="property__card-overlay"></div>
+                                    </a>
+                                </div>
+                                <div class="property__card-content">
+                                    <div class="property__card-price card-price d-flex justify-content-between">
+                                        <span class="card-price">$1599 / 7 days</span>
+                                    </div>
+                                    <div class="property__card-name">
+                                        <a href="#" class="property__card-title">
+                                            Prague Sights
+                                        </a>
+                                        <a href="#" class="property__card-address">
+                                            Prague - Chech Republic
+                                        </a>
+                                    </div>
+                                    <div class="property__card-descript">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla facilisi.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- end div "content" -->
+</div>
+<!-- start footer -->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer__content d-flex justify-content-between">
+            <div class="footer__socials">
+                <a class="icon-facebook" href="https://www.facebook.com"></a> 
+                <a class="icon-twitter" href="https://www.twitter.com"></a> 
+                <a class="icon-linkedin" href="https://www.linkedin.com"></a> 
+            </div>
+            <nav class="footer__menu d-flex justify-content-between align-items-center">
+                <ul class="footer__menu-list">               
+                    <li>
+                        <a href="terms.html">
+                            Terms & conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">
+                            Privacy policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__credits d-flex align-items-center">
+                &#169; 2017 tour&go. All rights reserved
+            </div>
+        </div>
+    </div>
+<!-- start scroll to top -->
+    <div data-scroll-to-top class="scroll-to-top">
+        <a href="#">
+            <button class="btnScroll" id="btnScroll">
+                <span aria-hidden="true" class="scroll-icon icon-angle-up"></span>
+            </button>
+        </a>
+    </div>
+<!-- end scroll to top -->
+</footer>   
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

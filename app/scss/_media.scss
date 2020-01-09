@@ -69,6 +69,7 @@
         flex-direction: column;
         width: 30%;
         height: 80vh;
+        z-index: 11;
     // overflow: scroll;
         li a{
             margin-bottom: 19px;
@@ -166,6 +167,17 @@
     }
 }
 @media (max-width: 490px){
+    .header-cropped{
+        .select__language,
+        .select__money{
+            .select__form .jq-selectbox{
+                z-index: 12!important;
+                &__select {
+                    font-size: 14px;
+            }
+        }
+    }
+}
     .header__logo-name {
         font-size: 26px;
         padding: 17px 0;

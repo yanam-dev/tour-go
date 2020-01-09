@@ -31,3 +31,11 @@ $main: #f8f8f8;
     background: linear-gradient(to right, rgba(245,147,36,1) 0%, rgba(0,189,170,0.92) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59324', endColorstr='#00bdaa', GradientType=1 );
 }
+
+@mixin layout {
+    border: 1px solid $line;
+    background-color: #faf9f9;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.31);
+    border-bottom: 3px solid #ddd;
+}

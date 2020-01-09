@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="content">
+    <aside class="content">
         <header id="header" class="header header-cropped" style="background-image: url(images/main-bg-cropped.jpg)">
             <div class="header__top">
                 <div class="container">
@@ -75,7 +75,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="agents.html">
+                                    <a href="#agents">
                                         Find agents
                                     </a>
                                 </li>
@@ -85,12 +85,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="property.html">
+                                    <a href="#property">
                                         Property request
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="trips.html">
+                                    <a href="#trips.html">
                                         Viewing trips
                                     </a>
                                 </li>
@@ -112,80 +112,73 @@
             <div class="header__content">
                 <div class="container">
                     <h5 class="header__content-title">
-                        PROPERTIES FOR IN TURKEY & CYPRUS
+                        BOOK YOUR BEST TRIP
                     </h5>
-                    <div class="header__content-filter d-flex justify-content-between align-items-center">
-                        <div class="sort__items d-flex align-items-center justify-content-between">
-                            <div class="sort__items-border">
-                                <span class="results-amount">18 results</span>
-                                <form class="select__form" action="#">
-                                    <select name="sortOrder">
-                                        <option value>Sort By:</option>
-                                        <option value="New-in">Newest Listed</option>
-                                        <option value="price-desc">Price High to Low</option>
-                                        <option value="price-asc">Price Low to High</option>
-                                    </select>
-                                </form>
-                            </div>
-                            <div class="sort-list">
-                                <ul class="tabList d-flex align-items-center">
-                                    <li><a class="icon-th-large active">Grid</a></li>
-                                    <li><a class="icon-th-list">List</a></li>
-                                    <li><a class="icon-th-map">Map</a></li>
-                                    <li><a class="icon-th-draw">Draw map</a></li>
-                                </ul>
-                            </div>
+                    <div class="header__content-filter booking-filter d-flex justify-content-between align-items-center">
+                        <div class="sort__items-border search__field">
+                            <form class="select__form search__field-form d-flex justify-content-between" action="#">
+                                <span class="icon-search"></span>
+                                <input class="search-icon" type="text" placeholder="Enter country or city...">
+                                <input class="date-icon" type="text" placeholder="dd-mm-aaaa">
+                                <button type="submit">Find</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
     <main>
-    <section class="property-page" id="property-page">
+    <section class="property-page trip-page" id="property-page trip-page">
         <div class="container">
             <div class="property-page__sort d-flex justify-content-between">
-                <div class="property-page__content" id="property-page__content">
-                    <div class="property__slider-cards d-flex justify-content-between">
-                        <div class="property__slider-card focused">
-                            <div>
-                                <a class="property__card-image" style="background-image: url(images/content/akasha-house.png)">
+                <div class="property-page__content trip-page__content" id="property-page__content trip-page__content">
+                    <div class="property__slider-cards trip__cards d-flex justify-content-between">
+                        <div class="property__slider-card trip__card focused">
+                            <div class="trip__card-imgs d-flex">
+                                <a class="property__card-image trip__card-image" style="background-image: url(images/content/it-trip-1.png)">
                                     <div class="property__card-overlay"></div>
                                 </a>
-                                <div class="property__gallery d-flex">
-                                    <a class="property__gallery-img1" href="#" style="background-image: url(images/content/akasha-more-1.png)">
+                                <div class="property__gallery trip__gallery d-flex">
+                                    <a class="property__gallery-img1 trip__card-image1" href="#" style="background-image: url(images/content/it-trip-more-1.png)">
                                         <div class="property__card-overlay"></div>
                                     </a>
-                                    <a class="property__gallery-img2" href="#" style="background-image: url(images/content/akasha-more-2.png)">
+                                    <a class="property__gallery-img2 trip__card-image2" href="#" style="background-image: url(images/content/it-trip-more-2.png)">
                                         <div class="property__card-overlay"></div>
                                     </a>
                                 </div>
                             </div>
                                 <div class="property__card-content">
                                     <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-rent">Rent</span>
-                                        <span class="card-price">$2650 / month</span>
+                                        <span class="card-rent">Jan 17, 2018</span>
+                                        <span class="card-price">$2450</span>
                                     </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                            Akasha Beach House Byron
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            Briarwood Drive, Cedarville - United States
-                                        </a>
-                                    </div>
-                                    <div class="property__card-txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla dol facilisi...
-                                            <span>[<a class="txt__link" href="#">more details</a>]</span>
-                                        </p>
-                                    </div>
-                                    <div class="property__card-descript d-flex">
+                                    <div class="book__trip d-flex">
+                                        <div class="property__card-name">
+                                            <a href="#" class="property__card-title">
+                                                Italian Trip Apartment
+                                            </a>
+                                            <a href="#" class="property__card-address">
+                                                Via Pier Andrea Saccardo 31, 31100 Treviso, Italy
+                                            </a>
+                                        </div>
+                                        <div class="book__link">
+                                            <a href="#">
+                                                <span>Book now >></span>
+                                            </a>
+                                        </div>
+                                    </div>  
+                                    <div class="property__card-descript trip__card-descript d-flex">
                                         <div class="property__descript-col descript__col-one">
-                                            <span>289 m2</span>
-                                            <span>4 Garages</span>
+                                            <span>Number of properties: <n style="color:#00b7a4">10</n></span> 
+                                            <span>Number of days: <n style="color:#00b7a4">7 days</n></span>
                                         </div>
                                         <div class="property__descript-col descript__col-two">
-                                            <span>8 Bedrooms</span>
-                                            <span>4 Bathrooms</span>
+                                            <span>Lunch</span>
+                                            <span>Accomodation</span>
+                                        </div>
+                                        <div class="property__descript-col descript__col-three">
+                                            <span> Airport pickup</span>
+                                            <span>Airplane tickets</span>
                                         </div>
                                     </div>
                                     <div class="property__card-company d-flex align-items-center justify-content-between">
@@ -207,107 +200,52 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="property__slider-card focused">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/elegant-home-2.png)">
+                            <div class="property__slider-card trip__card focused">
+                                <div class="trip__card-imgs d-flex">
+                                    <a class="property__card-image trip__card-image" style="background-image: url(images/content/hyatt-chicago.png)">
                                         <div class="property__card-overlay"></div>
                                     </a>
-                                    <div class="property__gallery d-flex">
-                                        <a class="property__gallery-img1" href="#" style="background-image: url(images/content/elegant-more1.png)">
+                                    <div class="property__gallery trip__gallery d-flex">
+                                        <a class="property__gallery-img1 trip__card-image1" href="#" style="background-image: url(images/content/hyatt-chicago-more1.png)">
                                             <div class="property__card-overlay"></div>
                                         </a>
-                                        <a class="property__gallery-img4" href="#" style="background-image: url(images/content/elegant-more2.png)">
+                                        <a class="property__gallery-img4 trip__card-image2" href="#" style="background-image: url(images/content/hyatt-chicago-more2.png)">
                                             <div class="property__card-overlay"></div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="property__card-content">
                                     <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-rent">Rent</span>
-                                        <span class="card-price">$2650 / month</span>
+                                        <span class="card-rent">Jan 12, 2018</span>
+                                        <span class="card-price">$1380</span>
                                     </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                            Elegant Coastal Home
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            456 Lake Avenue, Oceand City - MD
-                                        </a>
-                                    </div>
-                                    <div class="property__card-txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla dol facilisi...
-                                            <span>[<a class="txt__link" href="#">more details</a>]</span>
-                                        </p>
-                                    </div>
-                                    <div class="property__card-descript d-flex">
+                                    <div class="book__trip d-flex">
+                                        <div class="property__card-name">
+                                            <a href="#" class="property__card-title">
+                                                Hyatt Regency Trip Chicago
+                                            </a>
+                                            <a href="#" class="property__card-address">
+                                                151 East Wacker Dr Chicago IL
+                                            </a>
+                                        </div>
+                                        <div class="book__link">
+                                            <a href="#">
+                                                <span>Book now >></span>
+                                            </a>
+                                        </div>
+                                    </div>  
+                                    <div class="property__card-descript trip__card-descript d-flex">
                                         <div class="property__descript-col descript__col-one">
-                                            <span>360 m2</span>
-                                            <span>1 Garage</span>
+                                            <span>Number of properties: <n style="color:#00b7a4">10</n></span> 
+                                            <span>Number of days: <n style="color:#00b7a4">5 days</n></span>
                                         </div>
                                         <div class="property__descript-col descript__col-two">
-                                            <span>5 Bedrooms</span>
-                                            <span>2 Bathrooms</span>
+                                            <span>Lunch</span>
+                                            <span>Accomodation</span>
                                         </div>
-                                    </div>
-                                    <div class="property__card-company d-flex align-items-center justify-content-between">
-                                        <div>Real estate:<span>Amanda td</span></div>
-                                        <ul class="card-company__icons d-flex">
-                                            <li class="card-company__icon icon-msg">
-                                                <a href="#" class="msg"></a>
-                                            </li>
-                                            <li class="card-company__icon">
-                                                <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
-                                            </li>
-                                            <li class="card-company__icon">
-                                                <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
-                                            </li>
-                                            <li class="card-company__icon">
-                                                <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property__slider-card focused">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/jabiru-3.png)">
-                                        <div class="property__card-overlay"></div>
-                                    </a>
-                                    <div class="property__gallery d-flex">
-                                        <a class="property__gallery-img1" href="#" style="background-image: url(images/content/beachfront-more1.png)">
-                                            <div class="property__card-overlay"></div>
-                                        </a>
-                                        <a class="property__gallery-img6" href="#" style="background-image: url(images/content/beachfront-more2.png)">
-                                            <div class="property__card-overlay"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="property__card-content">
-                                    <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-rent">Rent</span>
-                                        <span class="card-price">$2650 / month</span>
-                                    </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                        Jabiru Beachfront Byron
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            765 Ocean Avenue, Brooklyn NY
-                                        </a>
-                                    </div>
-                                    <div class="property__card-txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla dol facilisi...
-                                            <span>[<a class="txt__link" href="#">more details</a>]</span>
-                                        </p>
-                                    </div>
-                                    <div class="property__card-descript d-flex">
-                                        <div class="property__descript-col descript__col-one">
-                                            <span>970 m2</span>
-                                            <span>1 Garage</span>
-                                        </div>
-                                        <div class="property__descript-col descript__col-two">
-                                            <span>6 Bedrooms</span>
-                                            <span>3 Bathrooms</span>
+                                        <div class="property__descript-col descript__col-three">
+                                            <span>Airport pickup</span>
+                                            <span>Airplane tickets</span>
                                         </div>
                                     </div>
                                     <div class="property__card-company d-flex align-items-center justify-content-between">
@@ -329,46 +267,191 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="property__slider-card focused">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/splash-4.png)">
+                            <div class="property__slider-card trip__card focused">
+                                <div class="trip__card-imgs d-flex">
+                                    <a class="property__card-image trip__card-image" style="background-image: url(images/content/hollywood-residence.png)">
                                         <div class="property__card-overlay"></div>
                                     </a>
-                                    <div class="property__gallery d-flex">
-                                        <a class="property__gallery-img1" href="#" style="background-image: url(images/content/byron-more1.png)">
+                                    <div class="property__gallery trip__gallery d-flex">
+                                        <a class="property__gallery-img1 trip__card-image1" href="#" style="background-image: url(images/content/hollywood-more1.png)">
                                             <div class="property__card-overlay"></div>
                                         </a>
-                                        <a class="property__gallery-img8" href="#" style="background-image: url(images/content/byron-more2.png)">
+                                        <a class="property__gallery-img6 trip__card-image2" href="#" style="background-image: url(images/content/hollywood-more2.png)">
                                             <div class="property__card-overlay"></div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="property__card-content">
                                     <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-rent">Rent</span>
-                                        <span class="card-price">$2650 / month</span>
+                                        <span class="card-rent">Jan 08, 2018</span>
+                                        <span class="card-price">$2150</span>
                                     </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                            Splash Beachside Byron
+                                    <div class="book__trip d-flex">
+                                        <div class="property__card-name">
+                                            <a href="#" class="property__card-title">
+                                                Historic Trip Hollywood Beach Resort
+                                            </a>
+                                            <a href="#" class="property__card-address">
+                                                01 North Ocean Drive Hollywood FL
+                                            </a>
+                                        </div>
+                                        <div class="book__link">
+                                            <a href="#">
+                                                <span>Book now >></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="property__card-descript trip__card-descript d-flex">
+                                        <div class="property__descript-col descript__col-one">
+                                            <span>Number of properties: <n style="color:#00b7a4">10</n></span> 
+                                            <span>Number of days: <n style="color:#00b7a4">12 days</n></span>
+                                        </div>
+                                        <div class="property__descript-col descript__col-two">
+                                            <span>Lunch</span>
+                                            <span>Accomodation</span>
+                                        </div>
+                                        <div class="property__descript-col descript__col-three">
+                                            <span>Airport pickup</span>
+                                            <span>Airplane tickets</span>
+                                        </div>
+                                    </div>
+                                    <div class="property__card-company d-flex align-items-center justify-content-between">
+                                        <div>Real estate:<span>Prospera</span></div>
+                                        <ul class="card-company__icons d-flex">
+                                            <li class="card-company__icon icon-msg">
+                                                <a href="#" class="msg"></a>
+                                            </li>
+                                            <li class="card-company__icon">
+                                                <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                            </li>
+                                            <li class="card-company__icon">
+                                                <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                            </li>
+                                            <li class="card-company__icon">
+                                                <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property__slider-card trip__card focused">
+                                <div class="trip__card-imgs d-flex">
+                                    <a class="property__card-image trip__card-image" style="background-image: url(images/content/fantaSea.png)">
+                                        <div class="property__card-overlay"></div>
+                                    </a>
+                                    <div class="property__gallery trip__gallery d-flex">
+                                        <a class="property__gallery-img1 trip__card-image1" href="#" style="background-image: url(images/content/fantaSea-more1.png)">
+                                            <div class="property__card-overlay"></div>
                                         </a>
-                                        <a href="#" class="property__card-address">
-                                            2415 Byron Shire, New South - Wales
+                                        <a class="property__gallery-img8 trip__card-image2" href="#" style="background-image: url(images/content/fantaSea-more2.png)">
+                                            <div class="property__card-overlay"></div>
                                         </a>
+                                    </div>
+                                </div>
+                                <div class="property__card-content">
+                                    <div class="property__card-price card-price d-flex justify-content-between">
+                                        <span class="card-rent">Jan 10, 2018</span>
+                                        <span class="card-price">$1250</span>
+                                    </div>
+                                    <div class="book__trip d-flex">
+                                        <div class="property__card-name">
+                                            <a href="#" class="property__card-title">
+                                                Flagshio All-Suites, a fantaSea Resort
+                                            </a>
+                                            <a href="#" class="property__card-address">
+                                                60 N Maine Avenue Atlantic City NJ
+                                            </a>
+                                        </div>
+                                        <div class="book__link">
+                                            <a href="#">
+                                                <span>Book now >></span>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="property__card-txt">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla dol facilisi...
                                             <span>[<a class="txt__link" href="#">more details</a>]</span>
                                         </p>
                                     </div>
-                                    <div class="property__card-descript d-flex">
+                                    <div class="property__card-descript trip__card-descript d-flex">
                                         <div class="property__descript-col descript__col-one">
-                                            <span>529 m2</span>
-                                            <span>1 Garage</span>
+                                            <span>Number of properties: <n style="color:#00b7a4">10</n></span> 
+                                            <span>Number of days: <n style="color:#00b7a4">7 days</n></span>
                                         </div>
                                         <div class="property__descript-col descript__col-two">
-                                            <span>7 Bedrooms</span>
-                                            <span>2 Bathrooms</span>
+                                            <span>Lunch</span>
+                                            <span>Accomodation</span>
+                                        </div>
+                                        <div class="property__descript-col descript__col-three">
+                                            <span>Airport pickup</span>
+                                            <span>Airplane tickets</span>
+                                        </div>
+                                    </div>
+                                    <div class="property__card-company d-flex align-items-center justify-content-between">
+                                        <div>Real estate:<span>Prospera</span></div>
+                                        <ul class="card-company__icons d-flex">
+                                            <li class="card-company__icon icon-msg">
+                                                <a href="#" class="msg"></a>
+                                            </li>
+                                            <li class="card-company__icon">
+                                                <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
+                                            </li>
+                                            <li class="card-company__icon">
+                                                <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
+                                            </li>
+                                            <li class="card-company__icon">
+                                                <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property__slider-card trip__card focused">
+                                <div class="trip__card-imgs d-flex">
+                                    <a class="property__card-image trip__card-image" style="background-image: url(images/content/green-court.png)">
+                                        <div class="property__card-overlay"></div>
+                                    </a>
+                                    <div class="property__gallery trip__gallery d-flex">
+                                        <a class="property__gallery-img1 trip__card-image1" href="#" style="background-image: url(images/content/green-court-more1.png)">
+                                            <div class="property__card-overlay"></div>
+                                        </a>
+                                        <a class="property__gallery-img10 trip__card-image2" href="#" style="background-image: url(images/content/green-court-more2.png)">
+                                            <div class="property__card-overlay"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="property__card-content">
+                                    <div class="property__card-price card-price d-flex justify-content-between">
+                                        <span class="card-rent">Jan 09, 2018</span>
+                                        <span class="card-price">$2450</span>
+                                    </div>
+                                    <div class="book__trip d-flex">
+                                        <div class="property__card-name">
+                                            <a href="#" class="property__card-title">
+                                                Green Court Serviced Apartment Trip
+                                            </a>
+                                            <a href="#" class="property__card-address">
+                                                55 Beijing Xi Road, Huangpu District Shanghai Shanghai
+                                            </a>
+                                        </div>
+                                        <div class="book__link">
+                                            <a href="#">
+                                                <span>Book now >></span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="property__card-descript trip__card-descript d-flex">
+                                        <div class="property__descript-col descript__col-one">
+                                            <span>Number of properties: <n style="color:#00b7a4">10</n></span> 
+                                            <span>Number of days: <n style="color:#00b7a4">5 days</n></span>
+                                        </div>
+                                        <div class="property__descript-col descript__col-two">
+                                            <span>Lunch</span>
+                                            <span>Accomodation</span>
+                                        </div>
+                                        <div class="property__descript-col descript__col-three">
+                                            <span>Airport pickup</span>
+                                            <span>Airplane tickets</span>
                                         </div>
                                     </div>
                                     <div class="property__card-company d-flex align-items-center justify-content-between">
@@ -390,107 +473,52 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="property__slider-card focused">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/house-beachfront-5.png)">
+                            <div class="property__slider-card trip__card focused">
+                                <div class="trip__card-imgs d-flex">
+                                    <a class="property__card-image trip__card-image" style="background-image: url(images/content/katathani-trip.png)">
                                         <div class="property__card-overlay"></div>
                                     </a>
-                                    <div class="property__gallery d-flex">
-                                        <a class="property__gallery-img1" href="#" style="background-image: url(images/content/villa-more1.png)">
+                                    <div class="property__gallery trip__gallery d-flex">
+                                        <a class="property__gallery-img1 trip__card-image1" href="#" style="background-image: url(images/content/katathani-more1.png)">
                                             <div class="property__card-overlay"></div>
                                         </a>
-                                        <a class="property__gallery-img10" href="#" style="background-image: url(images/content/villa-more2.png)">
+                                        <a class="property__gallery-img12 trip__card-image2" href="#" style="background-image: url(images/content/katathani-more2.png)">
                                             <div class="property__card-overlay"></div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="property__card-content">
                                     <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-rent">Rent</span>
-                                        <span class="card-price">$2650 / month</span>
+                                        <span class="card-rent">Jan 15, 2018</span>
+                                        <span class="card-price">$3149</span>
                                     </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                        House Beachfront Echoes
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            1975 Byron Shire, New South - Wales
-                                        </a>
+                                    <div class="book__trip d-flex">
+                                        <div class="property__card-name">
+                                            <a href="#" class="property__card-title">
+                                                Luxury Villa - Stunning Holiday
+                                            </a>
+                                            <a href="#" class="property__card-address">
+                                                1656 Byron Shire, New South - Wales
+                                            </a>
+                                            <div class="book__link">
+                                                <a href="#">
+                                                    <span>Book now >></span>
+                                                </a>
+                                            </div>
+                                        </div> 
                                     </div>
-                                    <div class="property__card-txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla dol facilisi...
-                                            <span>[<a class="txt__link" href="#">more details</a>]</span>
-                                        </p>
-                                    </div>
-                                    <div class="property__card-descript d-flex">
+                                    <div class="property__card-descript trip__card-descript d-flex">
                                         <div class="property__descript-col descript__col-one">
-                                            <span>450 m2</span>
-                                            <span>4 Garages</span>
+                                            <span>Number of properties: <n style="color:#00b7a4">10</n></span> 
+                                            <span>Number of days: <n style="color:#00b7a4">12 days</n></span>
                                         </div>
                                         <div class="property__descript-col descript__col-two">
-                                            <span>8 Bedrooms</span>
-                                            <span>4 Bathrooms</span>
+                                            <span>Lunch</span>
+                                            <span>Accomodation</span>
                                         </div>
-                                    </div>
-                                    <div class="property__card-company d-flex align-items-center justify-content-between">
-                                        <div>Real estate:<span>Amanda td</span></div>
-                                        <ul class="card-company__icons d-flex">
-                                            <li class="card-company__icon icon-msg">
-                                                <a href="#" class="msg"></a>
-                                            </li>
-                                            <li class="card-company__icon">
-                                                <a href="#" class="socials" style="background-image: url(../images/icons/socials-icon.png)"></a>
-                                            </li>
-                                            <li class="card-company__icon">
-                                                <a href="#" class="resend" style="background-image: url(../images/icons/resend-icon.png)"></a>
-                                            </li>
-                                            <li class="card-company__icon">
-                                                <a href="#" class="wishlist" style=" background-image: url(../images/icons/wishlist-icon.png)"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property__slider-card focused">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/luxury-villa-6.png)">
-                                        <div class="property__card-overlay"></div>
-                                    </a>
-                                    <div class="property__gallery d-flex">
-                                        <a class="property__gallery-img1" href="#" style="background-image: url(images/content/akasha-more-1.png)">
-                                            <div class="property__card-overlay"></div>
-                                        </a>
-                                        <a class="property__gallery-img12" href="#" style="background-image: url(images/content/akasha-more-2.png)">
-                                            <div class="property__card-overlay"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="property__card-content">
-                                    <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-rent">Rent</span>
-                                        <span class="card-price">$2650 / month</span>
-                                    </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                            Luxury Villa - Stunning Holiday
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            1656 Byron Shire, New South - Wales
-                                        </a>
-                                    </div>
-                                    <div class="property__card-txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla dol facilisi...
-                                            <span>[<a class="txt__link" href="#">more details</a>]</span>
-                                        </p>
-                                    </div>
-                                    <div class="property__card-descript d-flex">
-                                        <div class="property__descript-col descript__col-one">
-                                            <span>1200 m2</span>
-                                            <span>4 Garages</span>
-                                        </div>
-                                        <div class="property__descript-col descript__col-two">
-                                            <span>12 Bedrooms</span>
-                                            <span>6 Bathrooms</span>
+                                        <div class="property__descript-col descript__col-three">
+                                            <span>Airport pickup</span>
+                                            <span>Airplane tickets</span>
                                         </div>
                                     </div>
                                     <div class="property__card-company d-flex align-items-center justify-content-between">
@@ -514,130 +542,6 @@
                             </div>
                         </div>
                     </div>
-                    <aside class="property-page__aside" id="property-page__aside">
-                        <form class="property-page__form">
-                            <div class="cats__select">
-                                <select>
-                                    <option>Keyword</option>
-                                    <option>Villa</option>
-                                    <option>Penthouse</option>
-                                    <option>Residence</option>
-                                </select>
-                                <select>
-                                    <option>Contract Type</option>
-                                    <option>Others</option>
-                                </select>
-                                <select>
-                                    <option>Country</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                </select>
-                                <select>
-                                    <option>City</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                </select>
-                                <select>
-                                    <option>Region</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                </select>
-                                <select>
-                                    <option>Property Type</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                </select>
-                                <div class="price__select d-flex">
-                                    <select>
-                                        <option>Min price</option>
-                                        <option>250.000</option>
-                                        <option>500.000</option>
-                                        <option>1 000 000</option>
-                                    </select>
-                                    <select>
-                                        <option>Max price</option>
-                                        <option>1 500 000</option>
-                                        <option>2 000 000</option>
-                                        <option>2 500 000</option>
-                                    </select>
-                                </div>
-                                <select>
-                                    <option>Bedrooms</option>
-                                    <option>2</option>
-                                    <option>4</option>
-                                    <option>6</option>
-                                    <option>8</option>
-                                    <option>10</option>
-                                    <option>12</option>
-                                </select>
-                                <select>
-                                    <option>Bathrooms</option>
-                                    <option>2</option>
-                                    <option>4</option>
-                                    <option>6</option>
-                                </select>
-                                <button class="cats__btn-reset" type="reset">Reset</button>
-                                <button class="cats__btn-search" type="submit">Search</button>
-                            </div>
-                        </form>
-                        <div class="property-page__estate">
-                            <div class="property-page__title">
-                                Featured estate
-                            </div>
-                            <p class="property-page__txt">
-                                Find your apartment or house on the exact key parameters.
-                            </p>
-                            <div class="property__slider-card">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/estate-1.png)">
-                                        <div class="property__card-overlay"></div>
-                                    </a>
-                                </div>
-                                <div class="property__card-content">
-                                    <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-price">$2650 / month</span>
-                                    </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                            Splash Beachside Byron
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            2415 Byron Shire, New South - Wales
-                                        </a>
-                                    </div>
-                                    <div class="property__card-descript">
-                                        Lorem ipsum dolor sit amet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property__slider-card">
-                                <div>
-                                    <a class="property__card-image" style="background-image: url(images/content/estate-2.png)">
-                                        <div class="property__card-overlay"></div>
-                                    </a>
-                                </div>
-                                <div class="property__card-content">
-                                    <div class="property__card-price card-price d-flex justify-content-between">
-                                        <span class="card-price">$2650 / month</span>
-                                    </div>
-                                    <div class="property__card-name">
-                                        <a href="#" class="property__card-title">
-                                        House Beachfront Echoes
-                                        </a>
-                                        <a href="#" class="property__card-address">
-                                            1975 Byron Shire, New South - Wales
-                                        </a>
-                                    </div>
-                                    <div class="property__card-descript">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nulla in purus posuere cursus nulla facilisi.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
                 </div>
                 <div class="pagination">
                     <ul class="pagination__list">
