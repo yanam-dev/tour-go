@@ -1470,7 +1470,6 @@
         margin-bottom: 165px;
         padding-left: 32px;
         padding-right: 29px;
-        padding-bottom: 30px;
         .tour__details{
             h5{
                 text-transform: initial;
@@ -1502,7 +1501,46 @@
                     top: 3px;
                 }
             }
+            .tour__about{
+                margin-bottom: 60px;
+                .tour__details-title{
+                    margin-bottom: 50px;
+                }
+            }
         }
+    }
+}
+.tour__aside{
+    .cats__select{
+        padding: 23px 37px;
+        .data-line, textarea{
+            @include aside-form-style;
+        }
+        input,
+        textarea{
+            border: none;
+            padding-top: 14px;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            color: $trigger;
+        }
+        textarea{
+            resize: none;
+            height: 190px;
+            border: 1px solid $line;
+        }
+        .cats__btn-reset{
+            padding-left: 12px;
+            padding-right: 10px;
+        }
+    }
+}
+.tour__proposal{
+    .property-page__title{
+        margin-bottom: 30px;
+    }
+    .property__card-name a{
+        display: block;
     }
 }
 //   end TOUR page

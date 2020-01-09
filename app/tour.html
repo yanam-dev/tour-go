@@ -116,23 +116,12 @@
                     </h5>
                     <div class="header__content-filter tour__content-filter d-flex justify-content-between align-items-center">
                         <div class="sort__items tour__sort-items d-flex align-items-center justify-content-between">
-                            <!-- <div class="sort__items-border">
-                                <span class="results-amount">18 results</span>
-                                <form class="select__form" action="#">
-                                    <select name="sortOrder">
-                                        <option value>Sort By:</option>
-                                        <option value="New-in">Newest Listed</option>
-                                        <option value="price-desc">Price High to Low</option>
-                                        <option value="price-asc">Price Low to High</option>
-                                    </select>
-                                </form>
-                            </div> -->
                             <div class="sort-list tour__sort-list">
                                 <ul class="tabList d-flex align-items-center">
                                     <li><a class="icon-th-large active">Project details</a></li>
                                     <li><a class="icon-th-list">Tour details</a></li>
                                     <li><a class="icon-th-map">Agent and Company details</a></li>
-                                    <li><a class="icon-th-draw">Book this tour</a></li>
+                                    <li><a class="icon-th-draw active">Book this tour</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -146,7 +135,7 @@
             <div class="tour__sort d-flex justify-content-between">
                 <div class="tour__sort-content" id="tour__sort-content">
                     <div class="tour__details">
-                        <div class="tour__details-day1">
+                        <div class="tour__details-day1 tour__about">
                             <h5 class="tour__details-title">
                                 Day 1: Departure
                             </h5>
@@ -165,7 +154,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tour__details-day2">
+                        <div class="tour__details-day2 tour__about">
                             <h5 class="tour__details-title">
                                 Day 2: Adventure Begins
                             </h5>
@@ -187,7 +176,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tour__details-day3">
+                        <div class="tour__details-day3 tour__about">
                             <h5 class="tour__details-title">
                                 Day 3: Historical Tour
                             </h5>
@@ -195,7 +184,7 @@
                                 This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris.
                             </p> 
                         </div>
-                        <div class="tour__details-day4">
+                        <div class="tour__details-day4 tour__about">
                             <h5 class="tour__details-title">
                                 Day 4: City Tour
                             </h5>
@@ -214,7 +203,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tour__details-day5">
+                        <div class="tour__details-day5 tour__about">
                             <h5 class="tour__details-title">
                                 Day 5: City Tour
                             </h5>
@@ -247,20 +236,34 @@
                         </div>
                     </div>
                 </div>
-                <aside class="property-page__aside" id="property-page__aside">
-                    <form class="property-page__form">
-                        <div class="cats__select">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <button class="cats__btn-reset" type="reset">Check Availability</button>
-                            <button class="cats__btn-search" type="submit">Book Now</button>
-                        </div>
-                    </form>
+                <aside class="property-page__aside tour__aside" id="property-page__aside tour__aside">
+                    <div class="tour__aside-form">
+                        <form>
+                            <div class="cats__select">
+                                <div class="data-line">
+                                    <input type="text" placeholder="Name*" required>
+                                </div>
+                                <div class="data-line">
+                                    <input type="text" placeholder="Email*" required>
+                                </div>
+                                <div class="data-line">
+                                    <input type="text" placeholder="Confirm Email*" required>
+                                </div>
+                                <div class="data-line">
+                                    <input type="text" placeholder="Phone">
+                                </div>
+                                <div class="data-line">
+                                    <input type="text" placeholder="Date*" required>
+                                </div>
+                                <div class="data-line">
+                                    <input type="text" placeholder="Number of Tickets*" required>
+                                </div>
+                                <textarea name="message" placeholder="Message" autocomplete="off"></textarea>
+                                <button class="cats__btn-reset" type="submit">Check Availability</button>
+                                <button class="cats__btn-search" type="submit">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
                     <div class="property-page__estate tour__proposal">
                         <div class="property-page__title">
                             Find your tour
